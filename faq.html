@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Česta pitanja — Dina Melemi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cinzel:wght@400;500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="faq">
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Dina <span>Melemi</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Početna</a></li>
+    <li><a href="o-nama.html" data-page="about">O nama</a></li>
+    <li><a href="proizvodi.html" data-page="products">Proizvodi</a></li>
+    <li><a href="narucite.html" data-page="ordering">Naručite</a></li>
+    <li><a href="faq.html" data-page="faq">Česta pitanja</a></li>
+    <li><a href="nasi-kupci.html" data-page="kupci">Naši kupci</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Meni">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<ul class="nav-overlay" id="nav-overlay">
+  <li><a href="index.html" onclick="closeMobileMenu()">Početna</a></li>
+  <li><a href="o-nama.html" onclick="closeMobileMenu()">O nama</a></li>
+  <li><a href="proizvodi.html" onclick="closeMobileMenu()">Proizvodi</a></li>
+  <li><a href="narucite.html" onclick="closeMobileMenu()">Naručite</a></li>
+  <li><a href="faq.html" onclick="closeMobileMenu()">Česta pitanja</a></li>
+  <li><a href="nasi-kupci.html" onclick="closeMobileMenu()">Naši kupci</a></li>
+</ul>
+
+<main>
+<div class="ordering-hero">
+    <div class="section-eyebrow" style="color:var(--gold); margin-bottom:20px; font-size:10px; letter-spacing:0.45em; text-transform:uppercase; font-family:'Jost',sans-serif; font-weight:200;">Česta pitanja</div>
+    <h1>Sve što želite<br><em>da znate</em></h1>
+    <p style="margin-top:20px;">Odgovori na najčešća pitanja naših kupaca. Ne nađete odgovor? Slobodno nas kontaktirajte.</p>
+  </div>
+
+  <div style="padding:100px 60px; background:var(--parchment);">
+    <div style="max-width:800px; margin:0 auto;">
+
+      <!-- CATEGORY: Narudžbina -->
+      <div class="faq-category reveal">
+        <div class="faq-category-label">📦 &nbsp; Naručivanje i dostava</div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Kako mogu da naručim?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Naručivanje je veoma jednostavno — kontaktirajte nas telefonom <strong>+381 61 257 0478</strong>, putem Instagram-a <strong><a href="https://www.instagram.com/dina.melemi/" target="_blank" style="color:inherit;">@dina.melemi</a></strong> ili Facebook-a <strong><a href="https://www.facebook.com/people/Dinini-prirodni-melemi/100063545351866/" target="_blank" style="color:inherit;">Dinini prirodni melemi</a></strong>. Recite nam koji melem vas zanima i dogovorićemo se o svemu ostalom.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Koliko traje dostava?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Dostava obično traje <strong>2–4 radna dana</strong> u zavisnosti od lokacije. Šaljemo širom Srbije i regiona. Tačne informacije o dostavi dogovaramo prilikom svake porudžbine.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Koliko košta dostava?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Troškovi dostave zavise od lokacije i količine porudžbine. Dogovaramo ih individualno prilikom svake porudžbine — uvek vas unapred obavestimo o ukupnim troškovima.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Koje su mogućnosti plaćanja?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Prihvatamo plaćanje <strong>pouzećem</strong> (plaćanje prilikom preuzimanja paketa) i <strong>uplatom na račun</strong>. Detalji se dogovaraju prilikom porudžbine.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Mogu li da naručim više melema odjednom?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Apsolutno! Možete naručiti koliko god želite melema u jednoj porudžbini. To je i praktičnije — uštedite na dostavi i uvek imate zalihu pri ruci.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY: Korišćenje -->
+      <div class="faq-category reveal">
+        <div class="faq-category-label">🌿 &nbsp; Upotreba i primena</div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Kako se koristi melem?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Melem se nanosi direktno na zahvaćeno mesto <strong>čistim rukama ili pamučnom gazom</strong>, nežnim kružnim pokretima. Za većinu melema preporuka je nanošenje <strong>2 puta dnevno</strong> — ujutru i uveče. Uz svaki melem dobijate uputstvo za upotrebu.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Koliko brzo se vide rezultati?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>To zavisi od problema i osobe. Neki kupci primete poboljšanje već <strong>posle nekoliko dana</strong>, kod hroničnih stanja rezultati dolaze postepeno kroz <strong>2–4 nedelje</strong> dosledne upotrebe. Prirodni preparati deluju sporo ali sigurno — ključ je doslednost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Mogu li deca da koriste meleme?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Za decu mlađu od 3 godine preporučujemo da prvo konsultujete pedijatra. Za stariju decu, većina naših melema je pogodna — kontaktirajte nas i recite nam o kom problemu se radi, pa ćemo vas usmeriti.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li melem može da se koristi na osetljivoj koži?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Naši melemi su prirodnog porekla i bez agresivnih hemikalija, pa su uglavnom dobro podnošljivi. Preporučujemo da pre prve upotrebe nanesete malu količinu na unutrašnji zglob i sačekate 24 sata — ako nema reakcije, slobodno koristite.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Kolika je težina / zapremina melema?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Svaki melem dolazi u tegli od <strong>50 ml</strong>, što je dovoljno za duži period upotrebe pri redovnom nanošenju.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY: Sastojci -->
+      <div class="faq-category reveal">
+        <div class="faq-category-label">⚗️ &nbsp; Sastojci i bezbednost</div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Od čega su napravljeni melemi?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Svi naši melemi su napravljeni isključivo od <strong>prirodnih biljnih sastojaka</strong> — lekovito bilje, biljna ulja i vosak. Bez veštačkih konzervansa, sintetičkih dodataka i hemikalija. Recepture su zasnovane na tradicionalnim znanjima.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li melemi imaju rok trajanja?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Da. Rok trajanja je obično <strong>12–18 meseci</strong> od datuma proizvodnje. Čuvajte melem na hladnom i tamnom mestu, dalje od direktne sunčeve svetlosti i izvora toplote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li melemi imaju miris?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Mnogi naši melemi imaju <strong>prirodan biljni miris</strong> od sastojaka. Ne koristimo veštačke parfeme ni mirišljave dodatke — ono što osetite dolazi isključivo od prirodnog bilja.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li su melemi testirani na životinjama?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ne. Naši proizvodi <strong>nisu testirani na životinjama</strong>. Proizvodimo ručno u malim serijama, sa pažnjom i poštovanjem prema prirodi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY: Opšte -->
+      <div class="faq-category reveal">
+        <div class="faq-category-label">💬 &nbsp; Opšte</div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Nisam siguran/na koji melem da naručim — možete li da pomognete?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Naravno! To je upravo razlog zašto smo tu. Javite nam se, opišite problem i mi ćemo vas usmeriti ka pravom melemu. Kontaktirajte nas na <strong>+381 61 257 0478</strong> ili putem društvenih mreža.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li melem može zameniti lečenje kod lekara?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Naši melemi su prirodni preparati za negu kože i ne zamenjuju lekarsku terapiju. Pri ozbiljnim ili hroničnim stanjima preporučujemo konsultaciju sa lekarom. Melemi mogu biti odlična <strong>dopuna</strong> redovne nege.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li radite po porudžbini / pravite posebne meleme?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Za sada nudimo fiksnu listu preparata, ali uvek smo otvoreni za razgovor. Javite nam se ako imate specifičnu potrebu i videćemo šta možemo da uradimo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Da li mogu da vratim proizvod ako nisam zadovoljan/na?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Stalo nam je do zadovoljstva svakog kupca. Ako iz nekog razloga niste zadovoljni, <strong>kontaktirajte nas</strong> i zajedno ćemo naći rešenje. Verujemo u naše proizvode i želimo da i vi budete zadovoljni.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact CTA -->
+      <div class="reveal" style="text-align:center; margin-top:80px; padding:60px 40px; background:var(--forest);">
+        <div class="ornamental-divider" style="justify-content:center; margin-bottom:32px;">
+          <div class="line" style="background:linear-gradient(to right,transparent,var(--gold));"></div>
+          <div class="diamond"></div>
+          <div class="line rev" style="background:linear-gradient(to left,transparent,var(--gold));"></div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(20px,3vw,30px); font-weight:300; color:var(--cream); font-style:italic; margin-bottom:8px;">Niste našli odgovor na svoje pitanje?</p>
+        <p style="font-size:14px; color:rgba(245,239,226,0.5); font-weight:300; margin-bottom:32px;">Javite nam se direktno i odgovorićemo vam u najkraćem mogućem roku.</p>
+        <a href="narucite.html" class="btn-primary" class="btn-primary">Kontaktirajte nas</a>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<!-- ══════════════════════════════════════
+     STRANICA: NAŠI KUPCI
+══════════════════════════════════════ -->
+</main>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Dina <span>Melemi</span></h3>
+      <div class="footer-brand-sub">Prirodni biljni preparati</div>
+      <p>Ukorenjeni u tradiciji. Napravljeni sa pažnjom. Lečenje mudrošću prirode, preparat po preparat.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigacija</h4>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="proizvodi.html">Proizvodi</a></li>
+        <li><a href="narucite.html">Naručite</a></li>
+        <li><a href="faq.html">Česta pitanja</a></li>
+        <li><a href="nasi-kupci.html">Naši kupci</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="narucite.html">Telefon</a></li>
+        <li><a href="narucite.html">Instagram</a></li>
+        <li><a id="footer-email-link" data-email="1" href="#">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Dina Melemi. Sva prava zadržana.</p>
+    <p>Prirodni biljni preparati — Napravljeni sa ljubavlju</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

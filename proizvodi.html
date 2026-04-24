@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proizvodi — Dina Melemi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cinzel:wght@400;500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="products">
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Dina <span>Melemi</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Početna</a></li>
+    <li><a href="o-nama.html" data-page="about">O nama</a></li>
+    <li><a href="proizvodi.html" data-page="products">Proizvodi</a></li>
+    <li><a href="narucite.html" data-page="ordering">Naručite</a></li>
+    <li><a href="faq.html" data-page="faq">Česta pitanja</a></li>
+    <li><a href="nasi-kupci.html" data-page="kupci">Naši kupci</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Meni">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<ul class="nav-overlay" id="nav-overlay">
+  <li><a href="index.html" onclick="closeMobileMenu()">Početna</a></li>
+  <li><a href="o-nama.html" onclick="closeMobileMenu()">O nama</a></li>
+  <li><a href="proizvodi.html" onclick="closeMobileMenu()">Proizvodi</a></li>
+  <li><a href="narucite.html" onclick="closeMobileMenu()">Naručite</a></li>
+  <li><a href="faq.html" onclick="closeMobileMenu()">Česta pitanja</a></li>
+  <li><a href="nasi-kupci.html" onclick="closeMobileMenu()">Naši kupci</a></li>
+</ul>
+
+<main>
+<div class="products-hero">
+    <div class="section-eyebrow" style="color:var(--gold); margin-bottom:20px;">Naši preparati</div>
+    <h1>Prirodni <em>biljni</em><br>preparati</h1>
+    <p style="margin-top:20px;">Svaki preparat je napravljen od čistog, prirodno dobijenog bilja.<br>Kontaktirajte nas za narudžbinu.</p>
+  </div>
+
+  <!-- PRICE BANNER -->
+  <div style="background:var(--gold); padding:24px 20px; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; box-sizing:border-box;">
+    <div style="display:flex; align-items:center; gap:16px; margin-bottom:4px;">
+      <div style="width:32px; height:1px; background:var(--ink); opacity:0.4;"></div>
+      <span style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:var(--ink); opacity:0.65;">Cena svih preparata</span>
+      <div style="width:32px; height:1px; background:var(--ink); opacity:0.4;"></div>
+    </div>
+    <div style="font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:500; color:var(--ink); letter-spacing:0.05em; line-height:1.2;">700,00 <span style="font-size:20px; font-weight:300;">din</span></div>
+    <div style="display:flex; align-items:center; gap:16px; margin-top:4px;">
+      <div style="width:32px; height:1px; background:var(--ink); opacity:0.4;"></div>
+      <span style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:var(--ink); opacity:0.65;">po komadu</span>
+      <div style="width:32px; height:1px; background:var(--ink); opacity:0.4;"></div>
+    </div>
+  </div>
+
+  <div class="products-section">
+    <div style="max-width:1200px; margin:0 auto; overflow-x:hidden;">
+
+      <!-- CATALOG GRID -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px;" id="catalog-grid">
+
+        <!-- each item -->
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">01</div>
+          <div class="catalog-name">Melem za urasle nokte</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">02</div>
+          <div class="catalog-name">Melem za gljivice</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">03</div>
+          <div class="catalog-name">Melem za mitisere / bubuljice</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">04</div>
+          <div class="catalog-name">Melem za pege i fleke</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">05</div>
+          <div class="catalog-name">Melem za rane</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">06</div>
+          <div class="catalog-name">Melem za ožiljke</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">07</div>
+          <div class="catalog-name">Melem za sunčane fleke</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">08</div>
+          <div class="catalog-name">Melem za kurije oko</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">09</div>
+          <div class="catalog-name">Melem za vene</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">10</div>
+          <div class="catalog-name">Melem za proširene vene</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">11</div>
+          <div class="catalog-name">Melem za bradavice</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">12</div>
+          <div class="catalog-name">Melem za ispucale pete</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">13</div>
+          <div class="catalog-name">Melem za ekzeme</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">14</div>
+          <div class="catalog-name">Melem za herpes</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">15</div>
+          <div class="catalog-name">Melem za hemoroide</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">16</div>
+          <div class="catalog-name">Melem za glavobolju</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">17</div>
+          <div class="catalog-name">Melem za psorijazu</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">18</div>
+          <div class="catalog-name">Melem za bolove</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">19</div>
+          <div class="catalog-name">Melem za kapilare</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">20</div>
+          <div class="catalog-name">Melem za perut</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">21</div>
+          <div class="catalog-name">Melem za podočnjake</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">22</div>
+          <div class="catalog-name">Melem za piskavicu</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">23</div>
+          <div class="catalog-name">Melem za cirkulaciju</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">24</div>
+          <div class="catalog-name">Melem za bolne noge</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">25</div>
+          <div class="catalog-name">Melem za otečene noge</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">26</div>
+          <div class="catalog-name">Melem za masno tkivo</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">27</div>
+          <div class="catalog-name">Melem za urasle dlake</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">28</div>
+          <div class="catalog-name">Melem za čireve na koži</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">29</div>
+          <div class="catalog-name">Melem za čukleve</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">30</div>
+          <div class="catalog-name">Melem za kondilome</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">31</div>
+          <div class="catalog-name">Melem za lišaj</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">32</div>
+          <div class="catalog-name">Melem za sinuse</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">33</div>
+          <div class="catalog-name">Melem za bolesne desni</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">34</div>
+          <div class="catalog-name">Melem za opekotine</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">35</div>
+          <div class="catalog-name">Melem za alergije</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">36</div>
+          <div class="catalog-name">Melem za svrab</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">37</div>
+          <div class="catalog-name">Melem za petni trn</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">38</div>
+          <div class="catalog-name">Melem za mrtve kosti</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">39</div>
+          <div class="catalog-name">Melem za koprivnjaču</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">40</div>
+          <div class="catalog-name">Melem za ojede</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+        <div class="catalog-item reveal" href="narucite.html">
+          <div class="catalog-num">41</div>
+          <div class="catalog-name">Melem za bore</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-1" href="narucite.html">
+          <div class="catalog-num">42</div>
+          <div class="catalog-name">Melem za strije</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-2" href="narucite.html">
+          <div class="catalog-num">43</div>
+          <div class="catalog-name">Melem za celulit</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+        <div class="catalog-item reveal reveal-delay-3" href="narucite.html">
+          <div class="catalog-num">44</div>
+          <div class="catalog-name">Melem za opadanje kose</div>
+          <div class="catalog-price">700,00 din</div>
+          <div class="catalog-arrow">→</div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM CTA -->
+      <div style="text-align:center; margin-top:80px; padding:60px 40px; background:var(--forest); position:relative;">
+        <div style="position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(to right,transparent,var(--gold),transparent);"></div>
+        <div class="ornamental-divider" style="justify-content:center; margin-bottom:32px;">
+          <div class="line" style="background:linear-gradient(to right,transparent,var(--gold));"></div>
+          <div class="diamond"></div>
+          <div class="line rev" style="background:linear-gradient(to left,transparent,var(--gold));"></div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(18px,2.5vw,28px); font-weight:300; color:var(--cream); margin-bottom:8px; font-style:italic;">„Niste sigurni koji preparat je pravi za vas?"</p>
+        <p style="font-size:14px; color:rgba(245,239,226,0.5); margin-bottom:32px; font-weight:300;">Javite nam se i usmerićemo vas ka pravom izboru za vaše potrebe.</p>
+        <button class="btn-primary" href="narucite.html">Naručite odmah</button>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ══════════════════════════════════════
+     STRANICA: NARUDZINA
+══════════════════════════════════════ -->
+</main>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Dina <span>Melemi</span></h3>
+      <div class="footer-brand-sub">Prirodni biljni preparati</div>
+      <p>Ukorenjeni u tradiciji. Napravljeni sa pažnjom. Lečenje mudrošću prirode, preparat po preparat.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigacija</h4>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="proizvodi.html">Proizvodi</a></li>
+        <li><a href="narucite.html">Naručite</a></li>
+        <li><a href="faq.html">Česta pitanja</a></li>
+        <li><a href="nasi-kupci.html">Naši kupci</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="narucite.html">Telefon</a></li>
+        <li><a href="narucite.html">Instagram</a></li>
+        <li><a id="footer-email-link" data-email="1" href="#">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Dina Melemi. Sva prava zadržana.</p>
+    <p>Prirodni biljni preparati — Napravljeni sa ljubavlju</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

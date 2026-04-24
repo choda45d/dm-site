@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naručite — Dina Melemi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cinzel:wght@400;500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="ordering">
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Dina <span>Melemi</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Početna</a></li>
+    <li><a href="o-nama.html" data-page="about">O nama</a></li>
+    <li><a href="proizvodi.html" data-page="products">Proizvodi</a></li>
+    <li><a href="narucite.html" data-page="ordering">Naručite</a></li>
+    <li><a href="faq.html" data-page="faq">Česta pitanja</a></li>
+    <li><a href="nasi-kupci.html" data-page="kupci">Naši kupci</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Meni">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<ul class="nav-overlay" id="nav-overlay">
+  <li><a href="index.html" onclick="closeMobileMenu()">Početna</a></li>
+  <li><a href="o-nama.html" onclick="closeMobileMenu()">O nama</a></li>
+  <li><a href="proizvodi.html" onclick="closeMobileMenu()">Proizvodi</a></li>
+  <li><a href="narucite.html" onclick="closeMobileMenu()">Naručite</a></li>
+  <li><a href="faq.html" onclick="closeMobileMenu()">Česta pitanja</a></li>
+  <li><a href="nasi-kupci.html" onclick="closeMobileMenu()">Naši kupci</a></li>
+</ul>
+
+<main>
+<div class="ordering-hero">
+    <div class="section-eyebrow" style="color:var(--gold); margin-bottom:20px; font-size:10px; letter-spacing:0.45em; text-transform:uppercase; font-family:'Jost',sans-serif; font-weight:200;">Kako naručiti</div>
+    <h1>Naručite svoje<br><em>preparate</em></h1>
+    <p style="margin-top:20px;">Naručivanje od Dina Melemi je jednostavno. Javite nam se telefonom, WhatsApp-om ili putem društvenih mreža i mi ćemo se pobrinuti za sve.</p>
+  </div>
+
+  <div class="ordering-section">
+    <div class="ordering-inner">
+
+      <div class="ordering-card reveal">
+        <div class="ordering-label">📞 &nbsp; Pozovite nas ili pošaljite poruku</div>
+
+        <div class="ordering-phone">
+          <!-- UREDITE: Zamenite pravim brojem telefona -->
+          <a href="tel:+381612570478">+381 61 257 0478</a>
+        </div>
+        <div class="ordering-phone-sub">Dostupni ponedeljak – subota · 08:00 – 16:00</div>
+
+        <div class="ordering-divider">
+          <div class="line"></div>
+          <span>ili nas pronađite na</span>
+          <div class="line"></div>
+        </div>
+
+        <!-- UREDITE: Zamenite # pravim linkovima -->
+        <a href="https://www.instagram.com/dina.melemi/" class="social-link-card" target="_blank">
+          <div class="social-icon">📸</div>
+          <div class="social-info">
+            <div class="social-name">Instagram</div>
+            <div class="social-desc">@dina.melemi · Pratite nas za novosti o proizvodima</div>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+
+        <a href="https://www.facebook.com/people/Dinini-prirodni-melemi/100063545351866/" class="social-link-card" target="_blank">
+          <div class="social-icon">📘</div>
+          <div class="social-info">
+            <div class="social-name">Facebook</div>
+            <div class="social-desc">Dinini prirodni melemi · Pišite nam na Facebook-u</div>
+          </div>
+          <div class="social-arrow">→</div>
+        </a>
+
+      </div>
+
+      <div class="ordering-info-grid reveal">
+        <div class="info-box">
+          <div class="info-box-icon">🚚</div>
+          <div class="info-box-title">Dostava</div>
+          <p class="info-box-body">Šaljemo širom regiona. Rokovi i troškovi dostave se dogovaraju prilikom narudžbine.</p>
+        </div>
+        <div class="info-box">
+          <div class="info-box-icon">💳</div>
+          <div class="info-box-title">Plaćanje</div>
+          <p class="info-box-body">Način plaćanja će biti dogovoren prilikom narudžbine. Trudimo se da bude što jednostavnije.</p>
+        </div>
+        <div class="info-box">
+          <div class="info-box-icon">🌿</div>
+          <div class="info-box-title">Svežina</div>
+          <p class="info-box-body">Svi preparati se prave sveži i šalju odmah, kako bi zadržali maksimalnu lekovitost.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:80px; padding:60px 40px; background:var(--forest); color:var(--cream);">
+        <div class="ornamental-divider" style="justify-content:center; margin-bottom:32px;">
+          <div class="line" style="background:linear-gradient(to right, transparent, var(--gold));"></div>
+          <div class="diamond"></div>
+          <div class="line rev" style="background:linear-gradient(to left, transparent, var(--gold));"></div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(20px,3vw,32px); font-weight:300; line-height:1.5; font-style:italic; margin-bottom:32px; color:var(--cream);">„Tu smo da vam pomognemo da pronađete pravi preparat za vaše potrebe. Ne ustručavajte se da nas kontaktirate."</p>
+        <p style="font-size:12px; letter-spacing:0.2em; color:var(--gold); text-transform:uppercase; margin-bottom:32px;">— Dina Melemi</p>
+        <p style="font-size:13px; font-weight:300; letter-spacing:0.1em; color:rgba(245,239,226,0.6); font-family:'Jost',sans-serif;">✉ &nbsp; miroslavprodic&#64;gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════
+     STRANICA: FAQ
+══════════════════════════════════════ -->
+</main>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Dina <span>Melemi</span></h3>
+      <div class="footer-brand-sub">Prirodni biljni preparati</div>
+      <p>Ukorenjeni u tradiciji. Napravljeni sa pažnjom. Lečenje mudrošću prirode, preparat po preparat.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigacija</h4>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="proizvodi.html">Proizvodi</a></li>
+        <li><a href="narucite.html">Naručite</a></li>
+        <li><a href="faq.html">Česta pitanja</a></li>
+        <li><a href="nasi-kupci.html">Naši kupci</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="narucite.html">Telefon</a></li>
+        <li><a href="narucite.html">Instagram</a></li>
+        <li><a id="footer-email-link" data-email="1" href="#">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Dina Melemi. Sva prava zadržana.</p>
+    <p>Prirodni biljni preparati — Napravljeni sa ljubavlju</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
